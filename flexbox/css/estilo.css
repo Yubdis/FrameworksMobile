@@ -1,0 +1,110 @@
+/* Seleciona todos os elementos do html  */
+*{
+    /* Zerar os espaçamentos dos elementos */
+    margin: 0;
+    padding: 0;
+    /* Considera a borda ao definir largura e altura */
+    box-sizing: border-box;
+}
+
+body{
+    /* Define uma família padrão de fonte  */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Define o tamanho padrão da fonte  */
+    font-size: 16px;
+    /* Define cor de fonte padrão  */
+    color: #333;
+    /* Define o alinhamento padrão dos textos  */
+    text-align: center;
+}
+
+/* Seleciona todos os elementos com a
+classe "container" */
+.container{
+    /* Define a largura miníma  */
+    min-width: 400px;
+    /* Define a largura máxima */
+    max-width: 1200px;
+    /* Define uma cor de fundo */
+    background-color: gray;
+    /* Centraliza container  */
+    margin: 0 auto;
+}
+
+header{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    margin: 15px;
+}
+
+ul{
+    display: flex;
+    margin-right: 5px;
+}
+
+a.logo{
+    /* inline-block permite que o elemento
+    tenha altura e largura */
+    display: inline-block;
+    width: 150px;
+}
+
+a.logo>img{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+a:link,
+a:visited{
+    color: #EBEBEB;
+    text-decoration: none;
+}
+
+.banner{
+    /* Define uma imagem de fundo  */
+    background-image: url(../img/banner.jpg);
+    /* Define a altura do elemento  */
+    height: 300px;
+    /* Define o tamanho da imagem de fundo  */
+    background-size: cover;
+    /* Define a posição do fundo  */
+    background-position: center;
+}
+
+h1{
+    color: #FFF;
+    /* background-color: rgba(0, 0, 0, .5); */
+    text-shadow: 2px 2px 2px rgb(226, 96, 96);
+    text-shadow: 2px 2px 2px #CDA75E;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+figure{
+    width: 390px;
+    margin: 10px auto;
+}
+
+figure img{
+    width: 100%;
+}
+
+footer{
+    background-color: #222;
+    padding: 30px 40px;
+}
+
+footer p{
+    color: #999;
+}
+
