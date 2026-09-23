@@ -89,14 +89,17 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 figure{
-    width: 390px;
-    margin: 10px auto;
+    flex: 1 1 200px;
+    margin: .15rem;
+    padding: .1rem .01rem;
+    
 }
-
 figure img{
     width: 100%;
+    display: block;
 }
 
 footer{
